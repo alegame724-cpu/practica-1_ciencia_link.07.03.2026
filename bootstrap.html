@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica #3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <!--container fluid ocupa el 100% de la pantalla-->
+        <div class="row">
+            <p class="fs-2 fw-bold">Grilla de Bootstrap</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center text-bg-primary p-3">col</p>
+            </div>
+            <div class="col">
+                <p class="text-center text-bg-secondary p-3">col</p>
+            </div>
+            <div class="col">
+                <p class="text-center text-bg-success p-3">col</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p class="text-center text-bg-secondary p-3">col-4</p>
+            </div>
+            <div class="col-8">
+                <p class="text-center text-bg-light p-3">col-8</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p class="text-center text-bg-secondary p-3">col-6</p>
+            </div>
+            <div class="col">
+                <p class="text-center text-bg-danger p-3">col</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <p class="text-center text-bg-warning p-3">col-3</p>
+            </div>
+            <div class="col-6">
+                <p class="text-center text-bg-info p-3">col-6</p>
+            </div>
+            <div class="col-3">
+                <p class="text-center text-bg-light p-3">col-3</p>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner-fluid">
+        <div class="row">
+            <p class="fs-2 fw-bold">Componentes bootstrap</p>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <p class="fs-6 fw-bold">Componente carousel</p>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="https://www.bing.com/th/id/OIP.LQDWEjJF8eNRuBPFbdoHzwAAAA?w=188&h=350&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="https://www.bing.com/th/id/OIP.XjtFvIVJEhrlN92jNcwIHQAAAA?w=188&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="https://www.bing.com/th/id/OIP.xZiveA2x8uSMPoT9K5p9KwAAAA?w=188&h=282&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
+            <div class="col-9">
+                <p class="fs-6 fw-bold">Componente accordion</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Descripcion Imagen 1 - Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <b>Noches Estrelladas en Japón.</b> Las noches en el 
+                                <span style="background-color: #fff3cd;">Japón antiguo</span> estaban marcadas por la oscuridad natural, 
+                                iluminadas apenas por faroles de papel <span class="text-danger-emphasis">(chochin)</span> y velas, 
+                                creando una atmósfera misteriosa y serena. Las actividades nocturnas giraban en torno a festivales 
+                                estacionales <span class="text-danger-emphasis">(Obon)</span>, la contemplación de la luna, 
+                                el teatro tradicional y el descanso temprano, con una fuerte conexión espiritual.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Descripcion Imagen 2 - Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Content for the second accordion item.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
